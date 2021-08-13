@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JS Продемонстрировать подсказки</title>
+</head>
+<body>
+
+  <p>Нажмите на кнопку, чтобы продемонстрировать подсказки.</p>
+
+  <button onclick="myFunction()">Кнопка</button>
+  
+  <p id="demo"></p>
+  <script>
+  function myFunction()
+  {
+  var x;
+  var name=prompt("Пожалуйста, введите ваше имя","Введите ваше имя");
+  if (name!=null)
+    {
+    x="Привет " + name + "! Как дела?";
+    document.getElementById("demo").innerHTML=x;
+    }
+  }
+  </script>
+</body>
+</html>
